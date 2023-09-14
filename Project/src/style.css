@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-div {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  /* align-items: center; */
+  color: white;
+  padding-left: 5%;
+}
+
+.heading {
+  color: white;
+  margin-top: 15%;
+  margin-left: 5%;
+  width: 50vw;
+  flex-direction: row;
+}
+.secondary {
+  /* justify-content: center; */
+  /* display: flex; */
+  /* align-items: first baseline; */
+  flex-wrap: wrap;
+  /* position: fixed; */
+  margin-top: 10%;
+  width: 50vw;
+  margin-left: -10vw;
+}
+
+.heading h1 {
+  font-size: 7vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading h3 {
+  font-size: 2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.task-form {
+  box-shadow: 2px 2px 2px 2px rgb(175, 28, 205);
+  margin-top: 40px;
+  margin-top: 60px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 30vw;
+  height: 50px;
+  border-radius: 50px;
+  outline: none;
+}
+
+.task-input {
+  padding: 5px;
+  /* margin-right: 10px; */
+  width: 5vw;
+  border: none;
+  border-radius: 4px;
+  font-size: 1vw;
+  outline: none;
+}
+.bar {
+  display: flex;
+  border: 1px solid rgb(201, 199, 199);
+  height: 2.1vh;
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+
+.datetime-input {
+  width: 200px;
+  padding: 5px;
+  /* margin-right: 10px; */
+  border: none;
+  border-radius: 4px;
+  font-size: 1vw;
+  margin-right: 1vw;
+  outline: none;
+}
+.dropdown {
+  width: 5vw;
+  padding: 5px;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  border: none;
+  border-radius: 4px;
+  font-size: 1vw;
+  outline: none;
+}
+.submit-button {
+  background-color: #0e0907;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.box {
+  height: 10vh;
+  /* width: 3vw; */
+  position: absolute;
+  display: flex;
+  border-radius: 30px;
+  margin-top: 2%;
+  /* margin-bottom: -170px; */
+  margin-left: 6vw;
+  cursor: pointer;
+  padding: 4vh 2vw;
+  background: #fff;
+  /* align-items: center; */
+  box-shadow: 0 10px 25px rgb(182, 19, 207);
+  background-color: rgb(22, 22, 22);
+}
+
+.box:hover input {
+  width: 20vw;
+}
+
+.box input {
+  width: 0;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.box a .fas {
+  color: rgb(182, 19, 207);
+  font-size: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-div {
+  /* padding: 50%; */
+  width: 35vw;
+  max-height: 25vw;
+  background-color: #353533;
+  margin-left: 5vw;
+  margin-top: 18%;
+  /* margin-top: -190px; */
+  border-radius: 8px;
+  color: rgb(182, 19, 207);
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(182, 19, 207);
+  overflow-y: auto;
+}
+
+.voice-search-button {
+  outline: none;
+  background: transparent;
+  border: none;
+}
+
+.microphone-button {
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Change the microphone button appearance on hover */
+
+.task-div::-webkit-scrollbar {
+  width: 10px;
+}
+
+.task-div::-webkit-scrollbar-track {
+  background: rgb(182, 19, 207);
+  border-radius: 5px;
+}
+
+.task-div::-webkit-scrollbar-thumb {
+  background-color: rgb(161, 158, 161);
+  border-radius: 5px;
+}
+
+.task-div::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.task-div span {
+  display: flex;
+  align-items: center;
+  padding-top: 3px;
+
+  gap: 350px;
+}
+.task-div span .fa-gear {
+  font-size: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  top: 100px;
+  left: 200px;
+}
+/* #divId {
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+.task-div h1 {
+  font-size: 3vw;
+  font-weight: bolder;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+
+  background-color: rgb(76, 79, 79);
+  border-radius: 10px;
+  box-shadow: 1px 1px rgb(182, 19, 207);
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 17px;
+  width: 17px;
+
+  background-image: url(./unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+ul li.checked::before {
+  background-image: url(./checked.png);
+}
+
+ul li span {
+  /* position: absolute; */
+  right: 0;
+  top: 12px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #f1ebeb;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.priority {
+  font-size: large;
+}
+
+.delete-btn {
+  background-color: rgb(240, 74, 74);
+  padding: 5px;
+  font-weight: 900;
+  border-radius: 6px;
+}
+
+.edit-btn,
+.save-btn {
+  background-color: #f0e14a; /* Bright yellow for visibility */
+  color: #000; /* Black text */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-left: 5px; /* Space between the buttons */
+  outline: none;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+  background-color: #d1b92d; /* Darker shade on hover */
+}
+
+.edit-input {
+  background-color: #eee; /* Light gray background */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 1rem; /* Adjust based on your design */
+  transition: border 0.3s;
+}
+
+.edit-input:focus {
+  border-color: #f0e14a; /* Bright yellow border on focus */
+}
+
+.add-text {
+  font-size: large;
+  flex-grow: 2;
+}
+
+.overdue {
+  background-color: red;
+}
+
+.overdue .add-text {
+  text-decoration: line-through; /* Cross out the text */
+}
+
+@media screen and (max-width: 900px) {
+  .main-div {
+    flex-direction: column;
+    /* position: relative; */
+  }
+  body {
+    background-color: rgb(22, 22, 22);
+  }
+  .heading {
+    margin-top: 10%;
+    padding-top: 0%;
+    width: 100%;
+  }
+  .heading h1 {
+    font-size: 14vw;
+  }
+  .heading h3 {
+    font-size: 4vw;
+  }
+  .secondary {
+    margin-left: 0%;
+    padding: 10%;
+    margin-top: 18%;
+    width: 100%;
+  }
+  .task-div {
+    margin-left: -5%;
+    width: 100%;
+    margin-top: 20%;
+  }
+  .task-div h1 {
+    font-size: 7vw;
+  }
+  .box {
+    margin-left: 0%;
+    padding: 4%;
+    height: 10vh;
+  }
+
+  .box a .fas {
+    font-size: 3vw;
+  }
+  .task-form {
+    position: absolute;
+    margin: 0%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 8vh;
+  }
+  .task-input {
+    height: 100%;
+    width: 20%;
+    font-size: 2.5vw;
+  }
+  .datetime-input {
+    height: 100%;
+    width: 40%;
+    font-size: 2.5vw;
+  }
+  .dropdown {
+    height: 100%;
+    width: 20%;
+    font-size: 2.5vw;
+  }
+  .submit-button {
+    height: 100%;
+    font-size: 2.4vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .secondary {
+    margin-top: 40%;
+    position: static;
+    margin-left: 0%;
+    margin-right: 10%;
+    /* align-items: first baseline; */
+    padding: 0%;
+  }
+  .box {
+    /* height: 10vh; */
+    margin-top: 5%;
+    margin-left: 30%;
+  }
+  .task-div {
+    margin-top: 30%;
+    margin-left: 0%;
+    /* padding: 5%; */
+    height: 90%;
+  }
+}
